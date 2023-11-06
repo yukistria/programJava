@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contoh dom</title>
+</head>
+<body>
+    <p class="paragraf"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Dolor asperiores dicta labore maiores iure distinctio et in deleniti, animi voluptatibus. 
+        Nobis aliquam saepe hic adipisci fuga ullam magni ducimus at.</p>
+
+    <p class="paragraf"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem est dolores in esse temporibus quod, sunt minima hic quae repellat assumenda! 
+        Ipsum nostrum aspernatur, error quibusdam possimus voluptate aut nam?</p>
+
+    <p class="paragraf"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eligendi nostrum incidunt sit ea saepe quia adipisci blanditiis, laborum natus,
+        laboriosam rem minus. Accusamus consequatur amet quas veniam atque libero nihil?</p>
+
+    <script>
+        var paragraf = document.getElementsByClassName("paragraf");
+        console.log(paragraf);
+    </script>
+
+    <script>
+        var paragraf =document.getElementsByClassName("paragraf");
+        setInterval(function () {
+            paragraf[0].style.color = "red";
+            paragraf[1].style.color = "green";
+            paragraf[2].style.color = "blue";
+
+            setTimeout(function () {
+                paragraf[0].style.color = "black";
+                paragraf[1].style.color = "black";
+                paragraf[2].style.color = "black";
+            }, 500)
+        }, 1000);
+    </script>
+</body>
+</html>
